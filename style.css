@@ -403,6 +403,90 @@ section:nth-child(even) {
 }
 
 /* ========================================
+   PROJECT LIST (vertical)
+======================================== */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.project-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-list-item:last-child {
+  border-bottom: none;
+}
+
+.project-list-info {
+  flex: 1;
+}
+
+.project-list-info h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.project-list-info h3 a {
+  color: var(--text);
+}
+
+.project-list-info h3 a:hover {
+  color: var(--accent);
+}
+
+.project-list-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.project-list-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.project-list-tags span {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.project-list-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.project-list-links a {
+  color: var(--text-muted);
+}
+
+.project-list-links a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .project-list-item {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .project-list-tags {
+    flex-wrap: wrap;
+  }
+}
+
+/* ========================================
    RESUME
 ======================================== */
 .resume-grid {
