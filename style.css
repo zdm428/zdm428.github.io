@@ -551,7 +551,10 @@ section:nth-child(even) {
 }
 
 .resume-download {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin-top: 2.5rem;
 }
 
