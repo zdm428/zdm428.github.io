@@ -1,0 +1,4 @@
+cd /home/zdm428/website-portfolio
+git add .
+git commit -m "Update website content"
+git push
