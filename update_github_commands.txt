@@ -2,3 +2,7 @@ cd /home/zdm428/website-portfolio
 git add .
 git commit -m "Update website content"
 git push
+
+# load locally
+python -m http.server 5500
+Open http://localhost:5500 — you just have to manually refresh after changes.
